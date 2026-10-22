@@ -1,0 +1,23 @@
+=== TESTANDO HEALTH ===
+{"status":"ok","uptime":577.516784491,"memoria":{"rss":68247552,"heapTotal":17809408,"heapUsed":8825904,"external":2457132,"arrayBuffers":145919}}
+
+=== CRIANDO VEÍCULO (POST) ===
+{"id":3,"placa":"TEST-9999","montadora":"Mercedes","modelo":"Actros","status":"DISPONIVEL"}
+
+ID Gerado: 3
+=== ATUALIZANDO VEÍCULO (PATCH) ===
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot PATCH /api/v1/veiculos/3</pre>
+</body>
+</html>
+
+
+=== REMOVENDO VEÍCULO (DELETE) ===
+{"mensagem":"Veiculo ID 3 removido com sucesso."}
+Processo concluído.
