@@ -1,23 +1,46 @@
-=== TESTANDO HEALTH ===
-{"status":"ok","uptime":577.516784491,"memoria":{"rss":68247552,"heapTotal":17809408,"heapUsed":8825904,"external":2457132,"arrayBuffers":145919}}
+=== TESTANDO HEALTH (http://localhost:4000/api/v1) ===
+{
+  "status": "ok",
+  "uptime": 416.367711778,
+  "memory": {
+    "rss": 69074944,
+    "heapTotal": 17809408,
+    "heapUsed": 10162408,
+    "external": 2457569,
+    "arrayBuffers": 146356
+  }
+}
 
-=== CRIANDO VEÍCULO (POST) ===
-{"id":3,"placa":"TEST-9999","montadora":"Mercedes","modelo":"Actros","status":"DISPONIVEL"}
+=== CRIANDO VEICULO (POST) ===
+{
+  "id": 1792754969601,
+  "placa": "TEST-9999",
+  "montadora": "Mercedes",
+  "modelo": "Actros",
+  "status": "DISPONIVEL"
+}
+ID Gerado: 1792754969601
 
-ID Gerado: 3
-=== ATUALIZANDO VEÍCULO (PATCH) ===
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Error</title>
-</head>
-<body>
-<pre>Cannot PATCH /api/v1/veiculos/3</pre>
-</body>
-</html>
+=== ATUALIZANDO STATUS (PATCH) ===
+{
+  "id": 1792754969601,
+  "placa": "TEST-9999",
+  "montadora": "Mercedes",
+  "modelo": "Actros",
+  "status": "EM_ROTA"
+}
 
+=== SUBSTITUINDO VEICULO (PUT) ===
+{
+  "id": 1792754969601,
+  "placa": "TEST-9999",
+  "montadora": "Scania",
+  "modelo": "R450",
+  "status": "MANUTENCAO"
+}
 
-=== REMOVENDO VEÍCULO (DELETE) ===
-{"mensagem":"Veiculo ID 3 removido com sucesso."}
-Processo concluído.
+=== REMOVENDO VEICULO (DELETE) ===
+
+HTTP Status: 204
+
+Processo concluido.

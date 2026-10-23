@@ -27,7 +27,7 @@ echo "ID Gerado: $ID"
 echo
 
 echo "=== ATUALIZANDO STATUS (PATCH) ==="
-curl -s -X PATCH "${BASE_URL}/veiculos/${ID}/status" \
+curl -s -X PATCH "${BASE_URL}/veiculos/${ID}" \
   -H "Content-Type: application/json" \
   -d '{"status":"EM_ROTA"}' | jq
 echo
